@@ -21,16 +21,16 @@ const HeroSection = () => {
                             <TypeAnimation
                                 sequence={[
                                     'Jonathan',
-                                    1000, 
-                                    'a CS Student at Georgia Tech',
-                                    1000,
+                                    2000, 
+                                    'Majoring in CS @ Georgia Tech',
+                                    2000,
                                     'a Software Developer',
-                                    1000,
+                                    1500,
                                     'a Tech Enthusiast',
-                                    1000
+                                    1500
                                 ]}
                                 wrapper="span"
-                                speed={50}
+                                speed={25}
                                 repeat={Infinity}
                             />
                         </h1>
