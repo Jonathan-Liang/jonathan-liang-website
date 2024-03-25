@@ -15,7 +15,7 @@ const HeroSection = () => {
                     className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
                 >
                     <div className="col-span-7 place-self-center text-center sm:text-left">
-                        <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
+                        <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-5xl lg:leading-normal font-extrabold">
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">Hello, I&apos;m {" "}</span>
                             <br></br>
                             <div style={{ minHeight: '2.5em' }}> {/* Adjust '3em' as needed */}
@@ -43,7 +43,9 @@ const HeroSection = () => {
                         </p>
                         <div>
                             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 bg-white hover:bg-slate-200 text-white">
-                                LinkedIn
+                                <a href="www.linkedin.com/in/jonathan-liang-jl" target="_blank" rel="noopener noreferrer">
+                                    LinkedIn
+                                </a>
                             </button>
                             <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3">
                                 <a href="https://drive.google.com/file/d/1g-O53DpruIwCd3XREKr-bIRxiIEYkMHU/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
