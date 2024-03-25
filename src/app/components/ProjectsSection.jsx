@@ -11,7 +11,7 @@ const projectsData = [
         description: "Project 1 Description",
         image: "/images/projects/dummy.png",
         tag: ["All", "Machine Learning"],
-        gitUrl: "/",
+        gitUrl: " ",
         previewUrl: "/",
     },
     {
@@ -19,7 +19,7 @@ const projectsData = [
         title: "Project 2",
         description: "Project 2 Description",
         image: "/images/projects/dummy.png",
-        tag: ["All", "Machine Learning"],
+        tag: ["All", "Machine Learning"], 
         gitUrl: "/",
         previewUrl: "/",
     },
