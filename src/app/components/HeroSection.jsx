@@ -15,7 +15,7 @@ const HeroSection = () => {
                     className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
                 >
                     <div className="col-span-7 place-self-center text-center sm:text-left">
-                        <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
+                        <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-7xl lg:leading-normal font-extrabold">
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">Hello, I&apos;m {" "}</span>
                             <br></br>
                             <TypeAnimation
@@ -35,7 +35,9 @@ const HeroSection = () => {
                             />
                         </h1>
                         <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-                            Small Description: Fix Later
+                            Hi, my name is Jonathan Liang! I am currently a computer science major with threads in intelligence
+                            and information internetworks at the Georgia Institute of Technology. Please feel free to scroll down and 
+                            explore my website to learn more about me, play around with my projects, or reach out to talk to me!
                         </p>
                         <div>
                             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 bg-white hover:bg-slate-200 text-white">
