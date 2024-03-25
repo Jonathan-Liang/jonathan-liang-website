@@ -18,7 +18,7 @@ const HeroSection = () => {
                         <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-5xl lg:leading-normal font-extrabold">
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">Hello, I&apos;m {" "}</span>
                             <br></br>
-                            <div style={{ minHeight: '2.5em' }}> {/* Adjust '3em' as needed */}
+                            <div style={{ minHeight: '1.5em' }}> {/* Adjust '3em' as needed */}
                                 <TypeAnimation
                                     sequence={[
                                         'Jonathan',
