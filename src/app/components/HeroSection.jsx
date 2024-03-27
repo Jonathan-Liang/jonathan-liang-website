@@ -16,14 +16,12 @@ const HeroSection = () => {
                 >
                     <div className="col-span-7 place-self-center text-center sm:text-left">
                         <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-5xl lg:leading-normal font-extrabold">
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">Hello, I&apos;m {" "}</span>
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">Hello, I&apos;m Jonathan, {" "}</span>
                             <br></br>
                             <div style={{ minHeight: '1.5em' }}> {/* Adjust '3em' as needed */}
                                 <TypeAnimation
                                     sequence={[
-                                        'Jonathan',
-                                        1000, 
-                                        'Majoring in CS @ Georgia Tech',
+                                        'a CS major @ Georgia Tech',
                                         1000,
                                         'a Software Developer',
                                         1000,
