@@ -23,7 +23,7 @@ const HeroSection = () => {
                                     sequence={[
                                         'a CS major @ Georgia Tech',
                                         1000,
-                                        'a Software Developer',
+                                        'a SDE @ Amazon',
                                         1000,
                                         'a Tech Enthusiast',
                                         1000
@@ -46,7 +46,7 @@ const HeroSection = () => {
                                 </a>
                             </button>
                             <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3">
-                                <a href="https://drive.google.com/file/d/1g-O53DpruIwCd3XREKr-bIRxiIEYkMHU/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                                <a href="/Jonathan_Liang_Resume.pdf" target="_blank" rel="noopener noreferrer" className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                                     Download Resume/CV
                                 </a>
                             </button>
