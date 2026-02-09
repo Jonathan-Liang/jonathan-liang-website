@@ -2,7 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import { motion } from "framer-motion";
 
 const HeroSection = () => {
     return (
@@ -18,7 +17,7 @@ const HeroSection = () => {
                                     sequence={[
                                         'a CS major @ Georgia Tech',
                                         1000,
-                                        'a SDE @ Amazon',
+                                        'an Incoming SDE @ Amazon',
                                         1000,
                                         'a Tech Enthusiast',
                                         1000

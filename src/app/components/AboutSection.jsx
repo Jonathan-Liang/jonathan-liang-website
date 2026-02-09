@@ -61,7 +61,7 @@ const AboutSection = () => {
                         />
                         <EducationCard
                             title="North Carolina School of Science and Mathematics"
-                            degree="Graduated: 2022"
+                            degree="Graduated: May 2023"
                             date=""
                             info={["Focus: Computer Science, Mathematics, Data Science"]}
                             courses={[

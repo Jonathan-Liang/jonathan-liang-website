@@ -1,36 +1,44 @@
 "use client";
 import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
-import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
 const projectsData = [
     {
         id: 1,
-        title: "Project 1",
-        description: "Project 1 Description",
-        image: "/images/projects/dummy.png",
-        tag: ["All", "Machine Learning"],
-        gitUrl: " ",
-        previewUrl: "/",
+        title: "Workout Tracker",
+        description: "A comprehensive fitness tracking application to monitor workouts, track progress, and achieve fitness goals.",
+        image: "/images/projects/Workout_Tracker/workout_tracker_thumbnail.png",
+        tag: ["All", "Mobile"],
+        slug: "workout-tracker",
+        previewUrl: "/projects/workout-tracker",
     },
     {
         id: 2,
-        title: "Project 2",
-        description: "Project 2 Description",
-        image: "/images/projects/dummy.png",
-        tag: ["All", "Machine Learning"], 
-        gitUrl: "/",
-        previewUrl: "/",
+        title: "Missed Flight Connection Risk",
+        description: "Machine learning model to predict and analyze the risk of missed flight connections based on historical data and flight patterns.",
+        image: "/images/projects/Missed_Flight_Connection_Risk/flight_connection_thumbnail.png",
+        tag: ["All", "Machine Learning"],
+        slug: "missed-flight-risk",
+        previewUrl: "/projects/missed-flight-risk",
     },
     {
         id: 3,
-        title: "Project 3",
-        description: "Project 3 Description",
-        image: "/images/projects/dummy.png",
+        title: "Pendulum Simulation",
+        description: "Physics simulation demonstrating chaotic motion and control systems for single and double pendulum configurations with real-time visualization.",
+        image: "/images/projects/Pendulum_Simulation/pendulum_thumbnail.png",
+        tag: ["All"],
+        slug: "pendulum-simulation",
+        previewUrl: "/projects/pendulum-simulation",
+    },
+    {
+        id: 4,
+        title: "Agile Semantic Communication",
+        description: "Advanced communication system leveraging semantic understanding for efficient and adaptive information transfer.",
+        image: "/images/projects/Agile_Semantic_Communication/semantic_comm_thumbnail.png",
         tag: ["All", "Machine Learning"],
-        gitUrl: "/",
-        previewUrl: "/",
+        slug: "agile-semantic-communication",
+        previewUrl: "/projects/agile-semantic-communication",
     }
 ]
 
@@ -62,13 +70,24 @@ const ProjectsSection = () => {
             <button
               key={category}
               onClick={() => handleTagChange(category)}
-              className={`px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 flex items-center justify-center ${
+              className={`relative overflow-hidden px-[4px] py-[4px] rounded-full transition-all duration-300 group ${
                 tag === category
-                  ? "bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 text-white shadow-lg transform scale-105"
-                  : "bg-[#181818] text-[#ADB7BE] hover:bg-[#222222] border border-[#33353F]"
+                  ? "bg-gradient-to-r from-blue-800 via-blue-600 to-blue-300 hover:shadow-[0_0_20px_rgba(59,130,246,0.5)]"
+                  : "bg-[#33353F] hover:bg-gradient-to-r hover:from-blue-800 hover:via-blue-600 hover:to-blue-300"
               }`}
             >
-              {category}
+              <div className={`relative rounded-full px-8 py-4 overflow-visible ${
+                tag === category ? "bg-[#121212]" : "bg-[#181818]"
+              }`}>
+                <span className={`absolute inset-[-2px] rounded-full bg-gradient-to-r from-blue-800 via-blue-600 to-blue-300 transition-transform duration-700 ease-out ${
+                  tag === category ? "translate-x-0" : "translate-x-[-110%] group-hover:translate-x-0"
+                }`}></span>
+                <span className={`relative z-10 text-lg font-semibold transition-all duration-150 ${
+                  tag === category ? "text-white font-bold" : "text-[#ADB7BE] group-hover:text-white group-hover:font-bold"
+                }`}>
+                  {category}
+                </span>
+              </div>
             </button>
           ))}
         </div>
