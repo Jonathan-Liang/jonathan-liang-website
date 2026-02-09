@@ -123,7 +123,7 @@ export const TAB_Data = [
                     <p className="text-[#ADB7BE] mb-1">Amazon — Bellevue, WA</p>
                     <p className="text-sm text-[#ADB7BE] mb-4">May 2025 – Aug 2025</p>
                     <ul className="space-y-2 list-disc pl-5 text-[#ADB7BE]">
-                        <li>Built a tool for a high-traffic service central to Amazon's ordering experience with Java, Spring, and AWS AppConfig.</li>
+                        <li>Built a tool for a high-traffic service central to Amazon&apos;s ordering experience with Java, Spring, and AWS AppConfig.</li>
                         <li>Achieved 3x reduction in average ticket resolution time and enabled more production-realistic load and stress testing.</li>
                         <li>Authored the design document and led the design, operational readiness, and security certification reviews.</li>
                         <li>Spearheaded coordination with other service teams, security reviewers, and product managers to secure approvals.</li>
