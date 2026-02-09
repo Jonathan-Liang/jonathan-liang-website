@@ -54,11 +54,11 @@ const ProjectsSection = () => {
   
     return (
       <section id="projects">
-        <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+        <h2 className="text-left text-4xl font-bold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent mt-4 mb-8 md:mb-12">
           My Projects
         </h2>
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {["All", "Web", "Mobile", "Machine Learning"].map((category) => (
+        <div className="flex flex-wrap gap-4 mb-12">
+          {["All", "Mobile", "Machine Learning"].map((category) => (
             <button
               key={category}
               onClick={() => handleTagChange(category)}

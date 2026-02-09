@@ -26,14 +26,38 @@ const AboutSection = () => {
                             degree="Bachelor of Science in Computer Science"
                             date="Expected Graduation: May 2026"
                             info={["Threads: Intelligence, Information Internetworks"]}
-                            courses={[
-                                "Data Structures & Algorithms",
-                                "Computer Organization & Programming",
-                                "Objects and Design",
-                                "Discrete Mathematics",
-                                "Linear Algebra",
-                                "Object-Oriented Programming"
-                            ]}
+                            courseCategories={{
+                                "Information Internetworks": [
+                                    "CS 1331: Intro to Object-Oriented Programming",
+                                    "CS 1332: Data Structures & Algorithms",
+                                    "CS 2110: Computer Organization",
+                                    "CS 2200: Systems and Networks",
+                                    "CS 2340: Objects and Design",
+                                    "CS 3251: Computer Networking I",
+                                    "CS 3510: Design & Analysis of Algorithms",
+                                    "CS 4400: Intro to Database Systems",
+                                    "CS 4675: Internet Systems & Services",
+                                    "VIP 4602: VIP Project Team"
+                                ],
+                                "Intelligence": [
+                                    "CS 3600: Intro to Artificial Intelligence",
+                                    "CS 3630: Intro to Perception & Robotics",
+                                    "CS 4641: Machine Learning",
+                                    "CS 6476: Computer Vision",
+                                    "CS 7643: Deep Learning"
+                                ],
+                                "Mathematics": [
+                                    "CS 2050: Intro Discrete Math for CS",
+                                    "MATH 1554: Linear Algebra",
+                                    "MATH 2551: Multivariable Calculus",
+                                    "MATH 3012: Applied Combinatorics",
+                                    "ISYE 3770: Statistics & Applications"
+                                ],
+                                "Professional Settings": [
+                                    "CS 3001: Computing & Society",
+                                    "LMC 3403: Technical Communication"
+                                ]
+                            }}
                         />
                         <EducationCard
                             title="North Carolina School of Science and Mathematics"

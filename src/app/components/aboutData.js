@@ -87,10 +87,53 @@ export const TAB_Data = [
                     <h3 className="text-2xl font-bold mb-2 text-white">Georgia Institute of Technology</h3>
                     <p className="text-[#ADB7BE] mb-2">Bachelor of Science in Computer Science</p>
                     <p className="text-sm text-[#ADB7BE] mb-4">Expected Graduation: May 2026</p>
-                    <ul className="mb-4 list-disc pl-5 text-[#ADB7BE]">
-                        <li>Threads: Intelligence, Information Internetworks</li>
-                        <li>Relevant Coursework: Data Structures & Algorithms, Computer Organization, Discrete Math, Linear Algebra, Object-Oriented Programming</li>
-                    </ul>
+                    <div className="mb-4">
+                        <p className="text-white font-semibold mb-2">Threads: Intelligence, Information Internetworks</p>
+                        <p className="text-white font-semibold mb-2">Relevant Coursework:</p>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-[#ADB7BE]">
+                            <div>
+                                <p className="font-medium text-cyan-400 mt-3 mb-1">Core CS</p>
+                                <ul className="list-disc pl-5 space-y-1">
+                                    <li>CS 1331: Object-Oriented Programming</li>
+                                    <li>CS 1332: Data Structures & Algorithms</li>
+                                    <li>CS 2050: Discrete Math for CS</li>
+                                    <li>CS 2110: Computer Organization</li>
+                                    <li>CS 2200: Systems and Networks</li>
+                                    <li>CS 2340: Objects and Design</li>
+                                    <li>CS 3510: Design & Analysis of Algorithms</li>
+                                </ul>
+                                <p className="font-medium text-cyan-400 mt-3 mb-1">AI & Machine Learning</p>
+                                <ul className="list-disc pl-5 space-y-1">
+                                    <li>CS 3600: Intro to Artificial Intelligence</li>
+                                    <li>CS 3630: Intro to Perception & Robotics</li>
+                                    <li>CS 4641: Machine Learning</li>
+                                    <li>CS 6476: Computer Vision</li>
+                                    <li>CS 7643: Deep Learning (in progress)</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p className="font-medium text-cyan-400 mt-3 mb-1">Systems & Networking</p>
+                                <ul className="list-disc pl-5 space-y-1">
+                                    <li>CS 3251: Computer Networking I</li>
+                                    <li>CS 4400: Intro to Database Systems</li>
+                                    <li>CS 4675: Internet Systems & Services (in progress)</li>
+                                </ul>
+                                <p className="font-medium text-cyan-400 mt-3 mb-1">Mathematics</p>
+                                <ul className="list-disc pl-5 space-y-1">
+                                    <li>MATH 1554: Linear Algebra</li>
+                                    <li>MATH 2551: Multivariable Calculus</li>
+                                    <li>MATH 3012: Applied Combinatorics (in progress)</li>
+                                    <li>ISYE 3770: Statistics & Applications</li>
+                                </ul>
+                                <p className="font-medium text-cyan-400 mt-3 mb-1">Other</p>
+                                <ul className="list-disc pl-5 space-y-1">
+                                    <li>CS 3001: Computing & Society</li>
+                                    <li>VIP 4602: VIP Project Team</li>
+                                    <li>LMC 3403: Technical Communication (in progress)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className="bg-[#181818] rounded-xl p-6 border border-[#33353F]">
                     <h3 className="text-2xl font-bold mb-2 text-white">North Carolina School of Science and Mathematics</h3>

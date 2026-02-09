@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import AboutSection from "./components/AboutSection";
@@ -10,12 +12,19 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-[#121212]">
       <Navbar />
-      <div class="container mt-24 mx-auto px-12 py-4">
-        <HeroSection />
+      <motion.div 
+        className="container mt-24 mx-auto px-12 py-4"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        <div id="home">
+          <HeroSection />
+        </div>
         <AboutSection />
         <ProjectsSection />
         <EmailSection />
-      </div>
+      </motion.div>
       <Footer />
     </main>
   );
