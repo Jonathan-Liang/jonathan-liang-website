@@ -57,22 +57,20 @@ const ProjectsSection = () => {
         <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
           My Projects
         </h2>
-        <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-          <ProjectTag
-            onClick={handleTagChange}
-            name="All"
-            isSelected={tag === "All"}
-          />
-          <ProjectTag
-            onClick={handleTagChange}
-            name="Web"
-            isSelected={tag === "Web"}
-          />
-          <ProjectTag
-            onClick={handleTagChange}
-            name="Mobile"
-            isSelected={tag === "Mobile"}
-          />
+        <div className="flex flex-wrap justify-center gap-4 mb-12">
+          {["All", "Web", "Mobile", "Machine Learning"].map((category) => (
+            <button
+              key={category}
+              onClick={() => handleTagChange(category)}
+              className={`px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 flex items-center justify-center ${
+                tag === category
+                  ? "bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 text-white shadow-lg transform scale-105"
+                  : "bg-[#181818] text-[#ADB7BE] hover:bg-[#222222] border border-[#33353F]"
+              }`}
+            >
+              {category}
+            </button>
+          ))}
         </div>
         <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
           {filteredProjects.map((project, index) => (

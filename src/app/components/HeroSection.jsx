@@ -16,7 +16,7 @@ const HeroSection = () => {
                 >
                     <div className="col-span-7 place-self-center text-center sm:text-left">
                         <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-5xl lg:leading-normal font-extrabold">
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">Hello, I&apos;m Jonathan, {" "}</span>
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-primary-300">Hello, I&apos;m Jonathan, {" "}</span>
                             <br></br>
                             <div style={{ minHeight: '1.5em' }}> {/* Adjust '3em' as needed */}
                                 <TypeAnimation
@@ -39,16 +39,22 @@ const HeroSection = () => {
                             and information internetworks at the Georgia Institute of Technology. Please feel free to scroll down and 
                             explore my website to learn more about me, play around with my projects, or reach out to talk to me!
                         </p>
-                        <div>
-                            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 bg-white hover:bg-slate-200 text-white">
-                                <a href="https://www.linkedin.com/in/jonathan-liang-jl" target="_blank" rel="noopener noreferrer">
-                                    LinkedIn
-                                </a>
+                        <div className="flex flex-wrap items-center gap-3">
+                            <button className="relative overflow-hidden px-[2px] py-[2px] w-full sm:w-fit rounded-full bg-gradient-to-r from-blue-700 to-blue-500 text-white hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] transition-all duration-300 group">
+                                <div className="relative overflow-hidden rounded-full bg-gradient-to-r from-blue-700 to-blue-500 px-6 py-3">
+                                    <span className="absolute inset-0 bg-gradient-to-r from-white/20 via-white/50 to-white/20 w-[40%] translate-x-[-150%] group-hover:translate-x-[250%] transition-transform duration-700 ease-in-out"></span>
+                                    <a href="https://www.linkedin.com/in/jonathan-liang-jl" target="_blank" rel="noopener noreferrer" className="relative z-10 group-hover:font-bold transition-all duration-150">
+                                        LinkedIn
+                                    </a>
+                                </div>
                             </button>
-                            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3">
-                                <a href="/Jonathan_Liang_Resume.pdf" target="_blank" rel="noopener noreferrer" className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                                    Download Resume/CV
-                                </a>
+                            <button className="relative overflow-hidden px-[4px] py-[4px] w-full sm:w-fit rounded-full bg-gradient-to-r from-blue-800 via-blue-600 to-blue-300 text-white hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] transition-all duration-300 group">
+                                <div className="relative rounded-full bg-[#121212] px-[20px] py-[10px] overflow-visible">
+                                    <span className="absolute inset-[-2px] rounded-full bg-gradient-to-r from-blue-800 via-blue-600 to-blue-300 translate-x-[-110%] group-hover:translate-x-0 transition-transform duration-700 ease-out"></span>
+                                    <a href="/Jonathan_Liang_Resume.pdf" target="_blank" rel="noopener noreferrer" className="relative z-10 group-hover:font-bold transition-all duration-150">
+                                        Download Resume
+                                    </a>
+                                </div>
                             </button>
                         </div>
                     </div>

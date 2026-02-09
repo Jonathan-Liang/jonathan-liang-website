@@ -1,118 +1,78 @@
 "use client";
-import React, { useTransition, useState } from 'react';
-import Image from "next/image";
-import TabButton from "./TabButton";
-
-const TAB_Data = [
-    {
-        title:"Skills",
-        id:"skills",
-        content: (
-            <ul className="list-disc pl-5">
-                <li>Java (JavaFX) </li>
-                <li>Python (pandas, Numpy, TensorFlow, Keras, PyTorch, Matplotlib) </li>
-                <li>Javascript (React.js, Next.js, Express.js)</li>
-                <li>PHP</li>
-            </ul>
-        )
-    },
-    {
-        title:"Education",
-        id:"education",
-        content: (
-            <ul className="list-disc pl-5">
-                <li>
-                    Georgia Institute of Technology
-                    <ul className="list-disc pl-7">
-                        <li>Major: Computer Science with threads in Intelligence and Information Internetworks</li>
-                        <li>
-                            Relevant Courses:
-                            <ul className="list-disc pl-7">
-                                <li>Data Structures and Algorithms</li>
-                                <li>Computer Organization and Programming</li>
-                                <li>Objects and Design</li>
-                                <li>Discrete Mathematics</li>
-                                <li>Linear Algebra</li>
-                                <li>Object-Oriented Programming</li>
-                            </ul> 
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    North Carolina School of Science and Mathematics
-                    <ul className="list-disc pl-7">
-                        <li>Studied: Computer Science, Mathematics, and Data Science</li>
-                        <li>
-                            Relevant Courses:
-                            <ul className="list-disc pl-7">
-                                <li>Graph Theory</li>
-                                <li>Multivariable Calculus</li>
-                                <li>Data Structures and Algorithms</li>
-                                <li>Advanced Data Science</li>
-                                <li>Mathematical Modeling</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        )
-    },
-    {
-        title:"Experience",
-        id:"experience",
-        content: (
-            <ul className="list-disc pl-5">
-                <li>Add</li>
-                <li>Your</li>
-                <li>Experience</li>
-                <li>Here</li>
-            </ul>
-        )
-    }
-]
+import React from 'react';
+import { motion } from "framer-motion";
+import { TAB_Data } from './aboutData';
+import EducationCard from './EducationCard';
 
 const AboutSection = () => {
-    const [tab, setTab] = useState("skills")
-    const [isPending, startTransition] = useTransition();
-
-    const handleTabChange = (id) => {
-        startTransition(() => {
-            setTab(id);
-        })
-    };
+    const experienceData = TAB_Data.find(t => t.id === "experience");
+    const skillsData = TAB_Data.find(t => t.id === "skills");
+    
     return (
-        <section className="text-white">
-            <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-                <Image src="/images/hero-image.png" width={500} height={500} />
-                <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-                    <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-                    <p className="text-base lg:text-lg">
-                        I am super interested in all things software-related! I am currently working on developing 
-                        web/mobile applications and learning more about machine learning and AI.
-                    </p>
-                    <div className="flex flex-row justify-start mt-8">
-                        <TabButton 
-                        selectTab={() => handleTabChange("skills")} 
-                        active={tab === "skills"}>
-                            {" "}
-                            Skills{" "}
-                        </TabButton>
-                        <TabButton 
-                        selectTab={() => handleTabChange("education")} 
-                        active={tab === "education"}>
-                            {" "}
-                            Education{" "}
-                        </TabButton>
-                        <TabButton 
-                        selectTab={() => handleTabChange("experience")} 
-                        active={tab === "experience"}>
-                            {" "}
-                            Experience{" "}
-                        </TabButton>
+        <section id="about" className="text-white py-16">
+            {/* Education Section - Full Width */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="mb-12"
+                >
+                    <h2 className="text-4xl font-bold mb-6">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-primary-300">Education</span>
+                    </h2>
+                    <div className="space-y-6">
+                        <EducationCard
+                            title="Georgia Institute of Technology"
+                            degree="Bachelor of Science in Computer Science"
+                            date="Expected Graduation: May 2026"
+                            info={["Threads: Intelligence, Information Internetworks"]}
+                            courses={[
+                                "Data Structures & Algorithms",
+                                "Computer Organization & Programming",
+                                "Objects and Design",
+                                "Discrete Mathematics",
+                                "Linear Algebra",
+                                "Object-Oriented Programming"
+                            ]}
+                        />
+                        <EducationCard
+                            title="North Carolina School of Science and Mathematics"
+                            degree="Graduated: 2022"
+                            date=""
+                            info={["Focus: Computer Science, Mathematics, Data Science"]}
+                            courses={[
+                                "Graph Theory",
+                                "Multivariable Calculus",
+                                "Advanced Data Science",
+                                "Mathematical Modeling"
+                            ]}
+                        />
                     </div>
-                    <div className="mt-3">{TAB_Data.find((t) => t.id === tab).content}</div>
-                </div>
-            </div>
+                </motion.div>
+
+                {/* Experience and Skills - Two Column Layout */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3, delay: 0.2 }}
+                    className="grid md:grid-cols-[7fr_3fr] gap-8"
+                >
+                    {/* Experience - Left Column */}
+                    <div>
+                        <h2 className="text-4xl font-bold mb-6">
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-primary-300">Experience</span>
+                        </h2>
+                        {experienceData.content}
+                    </div>
+
+                    {/* Skills - Right Column */}
+                    <div>
+                        <h2 className="text-4xl font-bold mb-6">
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-primary-300">Skills</span>
+                        </h2>
+                        {skillsData.content}
+                    </div>
+                </motion.div>
         </section>
     )
 }
