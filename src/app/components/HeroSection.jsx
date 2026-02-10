@@ -35,20 +35,20 @@ const HeroSection = () => {
                         </p>
                         <div className="flex flex-wrap items-center gap-3">
                             <button className="relative overflow-hidden px-[2px] py-[2px] w-full sm:w-fit rounded-full bg-gradient-to-r from-blue-700 to-blue-500 text-white hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] transition-all duration-300 group">
-                                <div className="relative overflow-hidden rounded-full bg-gradient-to-r from-blue-700 to-blue-500 px-6 py-3">
+                                <a href="https://www.linkedin.com/in/jonathan-liang-jl" target="_blank" rel="noopener noreferrer" className="block relative overflow-hidden rounded-full bg-gradient-to-r from-blue-700 to-blue-500 px-6 py-3">
                                     <span className="absolute inset-0 bg-gradient-to-r from-white/20 via-white/50 to-white/20 w-[40%] translate-x-[-150%] group-hover:translate-x-[250%] transition-transform duration-700 ease-in-out"></span>
-                                    <a href="https://www.linkedin.com/in/jonathan-liang-jl" target="_blank" rel="noopener noreferrer" className="relative z-10 group-hover:font-bold transition-all duration-150">
+                                    <span className="relative z-10 group-hover:font-bold transition-all duration-150">
                                         LinkedIn
-                                    </a>
-                                </div>
+                                    </span>
+                                </a>
                             </button>
                             <button className="relative overflow-hidden px-[4px] py-[4px] w-full sm:w-fit rounded-full bg-gradient-to-r from-blue-800 via-blue-600 to-blue-300 text-white hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] transition-all duration-300 group">
-                                <div className="relative rounded-full bg-[#121212] px-[20px] py-[10px] overflow-visible">
+                                <a href="/Jonathan_Liang_Resume.pdf" target="_blank" rel="noopener noreferrer" className="block relative rounded-full bg-[#121212] px-[20px] py-[10px] overflow-visible">
                                     <span className="absolute inset-[-2px] rounded-full bg-gradient-to-r from-blue-800 via-blue-600 to-blue-300 translate-x-[-110%] group-hover:translate-x-0 transition-transform duration-700 ease-out"></span>
-                                    <a href="/Jonathan_Liang_Resume.pdf" target="_blank" rel="noopener noreferrer" className="relative z-10 group-hover:font-bold transition-all duration-150">
+                                    <span className="relative z-10 group-hover:font-bold transition-all duration-150">
                                         Download Resume
-                                    </a>
-                                </div>
+                                    </span>
+                                </a>
                             </button>
                         </div>
                     </div>
