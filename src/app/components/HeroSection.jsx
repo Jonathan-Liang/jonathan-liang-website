@@ -30,8 +30,11 @@ const HeroSection = () => {
                         </h1>
                         <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
                             Hi, my name is Jonathan Liang! I am currently a computer science major with threads in intelligence
-                            and information internetworks at the Georgia Institute of Technology. Please feel free to scroll down and 
-                            explore my website to learn more about me, play around with my projects, or reach out to talk to me!
+                            and information internetworks at the Georgia Institute of Technology. I am incredibly passionate about building solutions end to end, 
+                            moving from initial concept and design through launch and refinement. My experience spans data-driven systems, scalable and secure 
+                            applications, and user-focused experiences. Projects with meaningful impact energize me, and I am drawn to challenges that combine technical 
+                            expertise with creative problem solving. Please feel free to scroll down and explore my website to learn more about me, play around with my 
+                            projects, or reach out to talk to me!
                         </p>
                         <div className="flex flex-wrap items-center gap-3">
                             <button className="relative overflow-hidden px-[2px] py-[2px] w-full sm:w-fit rounded-full bg-gradient-to-r from-blue-700 to-blue-500 text-white hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] transition-all duration-300 group">

@@ -26,13 +26,16 @@ const AboutSection = () => {
                             degree="Bachelor of Science in Computer Science"
                             date="Expected Graduation: May 2026"
                             info={["Threads: Intelligence, Information Internetworks"]}
+                            slug="georgia-tech"
                             courseCategories={{
-                                "Information Internetworks": [
+                                "Computer Science Foundations": [
                                     "CS 1331: Intro to Object-Oriented Programming",
                                     "CS 1332: Data Structures & Algorithms",
                                     "CS 2110: Computer Organization",
+                                    "CS 2340: Objects and Design"
+                                ],
+                                "Information Internetworks": [
                                     "CS 2200: Systems and Networks",
-                                    "CS 2340: Objects and Design",
                                     "CS 3251: Computer Networking I",
                                     "CS 3510: Design & Analysis of Algorithms",
                                     "CS 4400: Intro to Database Systems",
@@ -64,6 +67,7 @@ const AboutSection = () => {
                             degree="Graduated: May 2023"
                             date=""
                             info={["Focus: Computer Science, Mathematics, Data Science"]}
+                            slug="ncssm"
                             courses={[
                                 "Graph Theory",
                                 "Multivariable Calculus",

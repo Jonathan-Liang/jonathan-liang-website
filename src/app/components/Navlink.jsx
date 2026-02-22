@@ -4,9 +4,9 @@ const Navlink = ({ href, title}) => {
     return (
         <Link 
             href={href} 
-            className="block py-2 px-4 text-[#ADB7BE] text-base font-medium rounded-lg hover:text-white hover:bg-blue-500/10 transition-all duration-200 relative group">
+            style={{WebkitFontSmoothing: 'antialiased', MozOsxFontSmoothing: 'grayscale', textRendering: 'optimizeLegibility'}}
+            className="block py-2 px-4 text-white/70 text-sm font-medium rounded-lg hover:text-white hover:bg-gradient-to-r hover:from-primary-500/20 hover:to-secondary-500/20 hover:shadow-lg hover:shadow-primary-500/20 hover:scale-105 transition-all duration-300 ease-out border border-transparent hover:border-primary-500/30">
             {title}
-            <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-400 group-hover:w-full group-hover:left-0 transition-all duration-300"></span>
         </Link>
     )
 }
