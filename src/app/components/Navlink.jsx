@@ -5,7 +5,7 @@ const Navlink = ({ href, title}) => {
         <Link 
             href={href} 
             style={{WebkitFontSmoothing: 'antialiased', MozOsxFontSmoothing: 'grayscale', textRendering: 'optimizeLegibility'}}
-            className="block py-2 px-4 text-white/70 text-sm font-medium rounded-lg hover:text-white hover:bg-gradient-to-r hover:from-primary-500/20 hover:to-secondary-500/20 hover:shadow-lg hover:shadow-primary-500/20 hover:scale-105 transition-all duration-300 ease-out border border-transparent hover:border-primary-500/30">
+            className="block py-2.5 px-5 text-nord-4 text-base sm:text-lg font-semibold rounded-lg hover:text-nord-6 hover:bg-nord-2 transition-all duration-300 ease-out border border-transparent hover:border-nord-3">
             {title}
         </Link>
     )

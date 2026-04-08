@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import React, { useState, useEffect} from "react";
 import Navlink from "./Navlink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
@@ -55,27 +56,32 @@ const Navbar = () => {
         <nav className={`fixed top-6 left-1/2 -translate-x-1/2 z-10 transition-all duration-500 ease-out ${visible ? 'translate-y-0 opacity-100 scale-100' : '-translate-y-24 opacity-0 scale-95'}`}>
             <div className={`rounded-2xl transition-all duration-500 ease-out relative ${
                 scrolled 
-                    ? 'bg-[#121212] shadow-2xl shadow-primary-500/20 border-2 border-primary-500/30 scale-[0.98]' 
-                    : 'bg-[#121212] shadow-xl shadow-primary-500/10 border-2 border-primary-500/20'
+                    ? 'bg-nord-1/90 backdrop-blur-md shadow-lg shadow-black/20 border border-nord-3 scale-[0.98]' 
+                    : 'bg-nord-1 shadow-md shadow-black/10 border border-nord-2'
             }`}>
-                {/* Gradient glow effect */}
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-primary-500/0 via-primary-500/5 to-secondary-500/0 opacity-50 pointer-events-none"></div>
-                <div className="flex items-center justify-between px-8 py-3 relative z-10">
-                    <div className="text-lg font-semibold text-white tracking-tight mr-8" style={{WebkitFontSmoothing: 'antialiased', MozOsxFontSmoothing: 'grayscale', textRendering: 'optimizeLegibility'}}>
-                        Jonathan Liang
+                <div className="flex items-center justify-between px-8 py-3.5 sm:px-10 sm:py-4 relative z-10 gap-x-8 sm:gap-x-12">
+                    
+                    {/* Profile Identity Area */}
+                    <div className="flex items-center gap-3 sm:gap-4 shrink-0">
+                        <div className="flex flex-col sm:flex">
+                            <span className="text-[17px] font-semibold text-nord-6 tracking-tight leading-tight" style={{WebkitFontSmoothing: 'antialiased', MozOsxFontSmoothing: 'grayscale', textRendering: 'optimizeLegibility'}}>
+                                Jonathan Liang
+                            </span>
+                        </div>
                     </div>
+
                     <div className="mobile-menu block md:hidden">
                         {
                             !navbarOpen ? (
                                 <button 
                                 onClick={ () => setNavbarOpen(true)} 
-                                className="flex items-center px-3 py-2 text-white/80 hover:text-white transition-all duration-300 hover:scale-110">
+                                className="flex items-center px-3 py-2 text-nord-6/80 hover:text-nord-6 transition-all duration-300 hover:scale-110">
                                     <Bars3Icon className="h-5 w-5" />
                                 </button>
                             ) : (
                                 <button 
                                 onClick={ () => setNavbarOpen(false)} 
-                                className="flex items-center px-3 py-2 text-white/80 hover:text-white transition-all duration-300 hover:scale-110">
+                                className="flex items-center px-3 py-2 text-nord-6/80 hover:text-nord-6 transition-all duration-300 hover:scale-110">
                                     <XMarkIcon className="h-5 w-5" />
                                 </button>
                             )
