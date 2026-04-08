@@ -49,8 +49,8 @@ const ExpandableSection = ({ title, subtitle, previewChips, children }) => {
             <div className="p-5 md:p-6">
                 <div className="flex justify-between items-start gap-4">
                     <div className="flex-1">
-                        <h4 className="text-lg font-semibold text-nord-6 group-hover:text-primary-400 transition-colors">{title}</h4>
-                        {subtitle && <p className="text-sm text-nord-4 mt-1">{subtitle}</p>}
+                        <h4 className="text-xl font-semibold text-nord-6 group-hover:text-primary-400 transition-colors">{title}</h4>
+                        {subtitle && <p className="text-base text-nord-4 mt-1">{subtitle}</p>}
                         
                         <AnimatePresence>
                             {!isExpanded && previewChips && previewChips.length > 0 && (
@@ -64,7 +64,7 @@ const ExpandableSection = ({ title, subtitle, previewChips, children }) => {
                                     {previewChips.map((chip, idx) => {
                                         const isHighlight = chip.startsWith('+');
                                         return (
-                                            <span key={idx} className={`text-xs px-2.5 py-1 rounded-full border transition-colors ${isHighlight ? 'bg-primary-500/10 border-primary-500/30 text-primary-400 font-medium group-hover:bg-primary-500/20 group-hover:border-primary-500/50' : 'bg-nord-1 border-[#33353F] text-nord-4 group-hover:border-[#444] group-hover:text-nord-6'}`}>
+                                            <span key={idx} className={`text-sm px-3 py-1.5 rounded-full border transition-colors ${isHighlight ? 'bg-primary-500/10 border-primary-500/30 text-primary-400 font-medium group-hover:bg-primary-500/20 group-hover:border-primary-500/50' : 'bg-nord-1 border-[#33353F] text-nord-4 group-hover:border-[#444] group-hover:text-nord-6'}`}>
                                                 {chip}
                                             </span>
                                         );
@@ -144,15 +144,15 @@ const EducationCard = ({ title, degree, date, info, activities, slug }) => {
                                 {title}
                             </h3>
                             {isPrimary && (
-                                <span className="px-3 py-1 text-xs font-semibold rounded-full bg-primary-500/10 text-primary-400 border border-nord-3 shadow-sm animate-pulse-slow">
+                                <span className="px-3 py-1 text-sm font-semibold rounded-full bg-primary-500/10 text-primary-400 border border-nord-3 shadow-sm animate-pulse-slow">
                                     Current
                                 </span>
                             )}
                         </div>
                         
-                        <div className="flex flex-wrap items-center gap-2 md:gap-3 text-sm md:text-base text-nord-4 font-medium mt-3">
+                        <div className="flex flex-wrap items-center gap-2 md:gap-3 text-base md:text-lg text-nord-4 font-medium mt-3">
                             <span className="flex items-center gap-1.5 text-nord-6">
-                                <AcademicCapIcon className="w-5 h-5 text-primary-400" />
+                                <AcademicCapIcon className="w-6 h-6 text-primary-400" />
                                 {degree}
                             </span>
                             <span className="text-nord-4/50">•</span>
@@ -160,7 +160,7 @@ const EducationCard = ({ title, degree, date, info, activities, slug }) => {
                         </div>
 
                         {info && info.length > 0 && (
-                            <div className="flex flex-wrap items-center mt-2 text-sm text-nord-4">
+                            <div className="flex flex-wrap items-center mt-2 text-base md:text-lg text-nord-4">
                                 {info.map((item, idx) => {
                                     const parts = item.split(':');
                                     const isLast = idx === info.length - 1;
@@ -215,19 +215,19 @@ const EducationCard = ({ title, degree, date, info, activities, slug }) => {
                         subtitle="Leadership roles, student organizations, and extracurriculars."
                         previewChips={activities}
                     >
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             {activities.map((activity, idx) => {
                                 const { Icon, category } = getActivityProps(activity);
                                 return (
-                                    <div key={idx} className="flex items-center gap-4 p-3 rounded-xl bg-nord-1 border border-[#33353F] hover:border-primary-500/50 hover:bg-[#1f1f1f] transition-all group">
-                                        <div className="w-10 h-10 rounded-lg bg-nord-0 border border-[#33353F] flex items-center justify-center flex-shrink-0 group-hover:border-primary-500/30 transition-colors">
-                                            <Icon className="w-5 h-5 text-nord-4 group-hover:text-primary-500 transition-colors" />
+                                    <div key={idx} className="flex items-center gap-4 p-4 rounded-xl bg-nord-1 border border-[#33353F] hover:border-primary-500/50 hover:bg-[#1f1f1f] transition-all group">
+                                        <div className="w-12 h-12 rounded-lg bg-nord-0 border border-[#33353F] flex items-center justify-center flex-shrink-0 group-hover:border-primary-500/30 transition-colors">
+                                            <Icon className="w-6 h-6 text-nord-4 group-hover:text-primary-500 transition-colors" />
                                         </div>
                                         <div className="flex flex-col flex-1 justify-center min-w-0">
-                                            <p className="text-sm font-medium text-nord-6 leading-tight truncate whitespace-normal line-clamp-2" title={activity}>
+                                            <p className="text-base font-medium text-nord-6 leading-tight truncate whitespace-normal line-clamp-2" title={activity}>
                                                 {activity}
                                             </p>
-                                            <p className="text-xs text-primary-400/80 mt-1">
+                                            <p className="text-sm text-primary-400/80 mt-1">
                                                 {category}
                                             </p>
                                         </div>

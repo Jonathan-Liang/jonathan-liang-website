@@ -30,7 +30,7 @@ const EXPERIENCE_DATA = [
     {
         title: "Computer Science Teaching Assistant",
         company: "CS 4400 Introduction to Database Systems at Georgia Tech — Atlanta, GA",
-        date: "Aug 2025 – Present",
+        date: "Aug 2025 - Present",
         bullets: [
             "Building and refining autograder infrastructure for projects and exams to streamline grading for 545 students.",
             "Guiding students in office hours and forums with SQL debugging and clarifying core database concepts."
@@ -39,7 +39,7 @@ const EXPERIENCE_DATA = [
     {
         title: "Software Development Engineer Intern",
         company: "Amazon — Bellevue, WA",
-        date: "May 2025 – Aug 2025",
+        date: "May 2025 - Aug 2025",
         bullets: [
             "Built a tool for a high-traffic service central to Amazon's ordering experience with Java, Spring, and AWS AppConfig.",
             "Achieved 3x reduction in average ticket resolution time and enabled more production-realistic load and stress testing.",
@@ -50,7 +50,7 @@ const EXPERIENCE_DATA = [
     {
         title: "Software Engineer (Infrastructure and Security Team)",
         company: "Student Government Association IT Board at Georgia Tech — Atlanta, GA",
-        date: "Aug 2024 – May 2025",
+        date: "Aug 2024 - May 2025",
         bullets: [
             "Secured apps used by 20,000+ Georgia Tech students by developing safeguards to prevent sensitive PII exposure."
         ]
@@ -58,7 +58,7 @@ const EXPERIENCE_DATA = [
     {
         title: "Software Engineer Intern",
         company: "Emnovate - DigMe — Atlanta, GA",
-        date: "May 2024 – Aug 2024",
+        date: "May 2024 - Aug 2024",
         bullets: [
             "Designed and built an end-to-end, fully responsive product page using Next.js and Tailwind CSS.",
             "Wrote and streamlined product documentation, achieving a 7x reduction in onboarding time for new customers."
@@ -67,7 +67,7 @@ const EXPERIENCE_DATA = [
     {
         title: "Full Stack Software Engineer",
         company: "Data Science at Georgia Tech - Tech Team — Atlanta, GA",
-        date: "Aug 2023 – May 2024",
+        date: "Aug 2023 - May 2024",
         bullets: [
             "Enhanced the Data Science at GT member portal used by 500+ faculty and students by shipping collaboration features in React.js, optimizing Express.js API endpoints and PostgreSQL queries, and deploying to Heroku."
         ]
@@ -75,7 +75,7 @@ const EXPERIENCE_DATA = [
     {
         title: "Software and Information Technology Intern",
         company: "University of North Carolina Chapel Hill — Chapel Hill, NC",
-        date: "Jun 2023 – Aug 2023",
+        date: "Jun 2023 - Aug 2023",
         bullets: [
             "Developed and maintained personas and event modules for CarolinaGo, enhancing campus engagement for over 20,000+ students and faculty by publicizing orientations and events with PHP, JavaScript, and HTML/CSS."
         ]
